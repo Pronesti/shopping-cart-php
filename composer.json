@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Source\\": "src/"
+        }
+    },
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.1"
+    }
+    
+}
+
