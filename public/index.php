@@ -55,6 +55,12 @@ $app->get('/', function (Request $request, Response $response, $args) {
     return $response;
 });
 
+$app->get('/test', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Testing!");
+
+    return $response;
+});
+
 $app->get('/showCart', function (Request $request, Response $response, $args) {
     $response->getBody()->write($_SESSION['cart']->showList());
 
